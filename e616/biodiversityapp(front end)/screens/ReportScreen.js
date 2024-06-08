@@ -18,7 +18,7 @@ const ReportScreen = () => {
         Alert.alert('Error', 'Please select a location on the map.');
         return;
       }
-      await axios.post('http://192.168.135.97:5000', { latitude: location.latitude, longitude: location.longitude });
+      await axios.post('your ip address : your port', { latitude: location.latitude, longitude: location.longitude });
       setLocation(null);
       Alert.alert('Success', 'Sighting reported successfully!');
     } catch (error) {
