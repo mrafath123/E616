@@ -13,7 +13,7 @@ const ViewScreen = () => {
 
   const fetchSightings = async () => {
     try {
-      const response = await axios.get('http://192.168.135.97:5000/api/sightings');
+      const response = await axios.get('your ip address /api/sightings');
       setSightings(response.data);
     } catch (error) {
       console.error('Error fetching sightings:', error);
