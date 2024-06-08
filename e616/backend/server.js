@@ -7,11 +7,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://192.168.135.97:8081'
+  origin:'your ip adress '
 }));
 
 // MongoDB Atlas connection URI
-const MONGODB_URI = "mongodb+srv://rafath1234:rafath1234@cluster0.yjfhw6p.mongodb.net/e616?retryWrites=true&w=majority";
+const MONGODB_URI ="your_mongodb_url";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
